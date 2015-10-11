@@ -6,7 +6,7 @@ datetime <- strptime(paste(data$Date, data$Time), "%d/%m/%Y %H:%M:%S")
 
 png("plot2.png")
 
-plot(datetime, as.numeric(data$Global_active_power), 
+plot(datetime, data$Global_active_power, 
     type = 'l', xlab = "", ylab = "Global Active Power (kilowatts)")
 
 dev.off()
